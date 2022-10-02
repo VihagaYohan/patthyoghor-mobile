@@ -5,7 +5,11 @@ const Screen = () =>{
    
     return(
         <View>
-            <Text>Hello</Text>
+            <Text style={
+                {
+                    fontFamily:'Poppins-Bold',
+                    fontSize:20,
+                }}>Hello</Text>
         </View>
     )
 }
