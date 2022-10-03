@@ -3,18 +3,14 @@ import {StyleSheet, View, Text, Alert} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 // components
-import {AppText, AppWrapper, AppIcon,AppButton} from '../components';
+import {AppText, AppWrapper, AppIcon,AppButton,Avatar} from '../components';
 
 const {MaterialIcon} = AppIcon
 
 const Screen = () => {
   return (
-    <AppWrapper isScroll={true}>
-        <AppButton
-        name="Sign In"
-        isLoading={false}
-        onPress={()=>Alert.alert('hello')}
-      />
+    <AppWrapper isScroll={true} showWelcome={true}>
+      
     </AppWrapper>
   );
 };

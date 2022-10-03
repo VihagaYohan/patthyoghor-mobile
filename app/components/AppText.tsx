@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
   boldText: {
     fontFamily: fonts.boldFont,
     fontSize: fonts.extraLarge,
-    color: colors.primaryPurple,
+    color: colors.primaryGray,
   },
   regularText: {
     fontFamily: fonts.regularFont,
     fontSize: fonts.regular,
-    color: colors.primaryPurple,
+    color: colors.primaryGray,
   },
 });
 

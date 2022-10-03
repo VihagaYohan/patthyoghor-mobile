@@ -14,9 +14,10 @@ export const MaterialIcon = ({
   color = colors.primaryPurple,
   size = 25,
   onPress,
+  style,
 }: Icon) => {
   return (
-    <TouchableOpacity onPress={() => onPress()}>
+    <TouchableOpacity onPress={() => onPress()} style={style}>
       <Material_Icon name={name} size={size} color={color} />
     </TouchableOpacity>
   );
@@ -27,9 +28,10 @@ export const FontAwesomeIcon = ({
   color = colors.primaryPurple,
   size = 25,
   onPress,
+  style
 }: Icon) => {
   return (
-    <TouchableOpacity onPress={() => onPress()}>
+    <TouchableOpacity onPress={() => onPress()} style={style}>
       <Fontawesome_Icon name={name} size={size} color={color} />
     </TouchableOpacity>
   );
