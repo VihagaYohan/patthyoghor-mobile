@@ -19,13 +19,18 @@ import {
   View,
 } from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from './app/screens/HomeScreen'
+import {NavigationContainer} from '@react-navigation/native';
+import HomeScreen from './app/screens/HomeScreen';
+
+// navigators
+import {BottomNavigator} from './app/navigators';
 
 const App = () => {
-  return <SafeAreaView>
-    <HomeScreen/>
-  </SafeAreaView>;
+  return (
+    <NavigationContainer>
+      <BottomNavigator />
+    </NavigationContainer>
+  );
 };
 
 const styles = StyleSheet.create({});

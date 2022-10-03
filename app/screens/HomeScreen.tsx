@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
-import {StyleSheet,View,Text} from 'react-native'
+import React, {Component, useEffect} from 'react';
+import {StyleSheet, View, Text, Alert} from 'react-native';
+import Icon from 'react-native-vector-icons/AntDesign';
 
-const Screen = () =>{
-   
-    return(
-        <View>
-            <Text style={
-                {
-                    fontFamily:'Poppins-Bold',
-                    fontSize:20,
-                }}>Hello</Text>
-        </View>
-    )
-}
+// components
+import {AppText, AppWrapper, AppIcon,AppButton} from '../components';
 
-const styles = StyleSheet.create({
+const {MaterialIcon} = AppIcon
 
-})
+const Screen = () => {
+  return (
+    <AppWrapper isScroll={true}>
+        <AppButton
+        name="Sign In"
+        isLoading={false}
+        onPress={()=>Alert.alert('hello')}
+      />
+    </AppWrapper>
+  );
+};
+
+const styles = StyleSheet.create({});
 
 export default Screen;
