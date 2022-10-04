@@ -12,4 +12,5 @@ export default {
   extraSmall: responsiveFontSize(1.5),
   boldFont: 'Poppins-Bold',
   regularFont: 'Poppins-Regular',
+  mediumFont:'Poppins-Medium'
 };

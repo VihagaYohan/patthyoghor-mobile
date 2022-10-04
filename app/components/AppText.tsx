@@ -28,6 +28,13 @@ export const RegularText = ({children, style, ...props}: AppText) => {
   );
 };
 
+// medium text
+export const MediumText = ({children,style,...props}:AppText)=>{
+  return(
+    <Text style={[styles.mediumText,style]}{...props}>{children}</Text>
+  )
+}
+
 const styles = StyleSheet.create({
   boldText: {
     fontFamily: fonts.boldFont,
@@ -39,9 +46,15 @@ const styles = StyleSheet.create({
     fontSize: fonts.regular,
     color: colors.primaryGray,
   },
+  mediumText:{
+    fontFamily:fonts.mediumFont,
+    fontSize:fonts.medium,
+    color:colors.primaryGray
+  }
 });
 
 export default {
   BoldText,
-  RegularText
+  RegularText,
+  MediumText
 };

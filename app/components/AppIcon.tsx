@@ -13,12 +13,17 @@ export const MaterialIcon = ({
   name,
   color = colors.primaryPurple,
   size = 25,
+  iconStyle,
   onPress,
-  style,
 }: Icon) => {
   return (
-    <TouchableOpacity onPress={() => onPress()} style={style}>
-      <Material_Icon name={name} size={size} color={color} />
+    <TouchableOpacity onPress={() => onPress()}>
+      <Material_Icon
+        name={name}
+        size={size}
+        color={color}
+        style={[styles.icon]}
+      />
     </TouchableOpacity>
   );
 };
@@ -27,17 +32,26 @@ export const FontAwesomeIcon = ({
   name,
   color = colors.primaryPurple,
   size = 25,
+  iconStyle,
   onPress,
-  style
 }: Icon) => {
   return (
-    <TouchableOpacity onPress={() => onPress()} style={style}>
-      <Fontawesome_Icon name={name} size={size} color={color} />
+    <TouchableOpacity onPress={() => onPress()}>
+      <Fontawesome_Icon
+        name={name}
+        size={size}
+        color={color}
+        style={[styles.icon]}
+      />
     </TouchableOpacity>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  icon: {
+    borderWidth: 1,
+  },
+});
 
 export default {
   MaterialIcon,
