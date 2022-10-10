@@ -50,7 +50,8 @@ const AppWrapper = ({
             </View>
           )}
 
-          <ScrollView nestedScrollEnabled style={styles.childContainer}>{children}</ScrollView>
+          <ScrollView nestedScrollEnabled style={styles.childContainer}
+          showsVerticalScrollIndicator={false}>{children}</ScrollView>
         </React.Fragment>
       ) : (
         <View style={styles.childContainer}>{children}</View>
