@@ -50,7 +50,7 @@ const AppWrapper = ({
             </View>
           )}
 
-          <ScrollView style={styles.childContainer}>{children}</ScrollView>
+          <ScrollView nestedScrollEnabled style={styles.childContainer}>{children}</ScrollView>
         </React.Fragment>
       ) : (
         <View style={styles.childContainer}>{children}</View>
@@ -62,7 +62,7 @@ const AppWrapper = ({
 const styles = StyleSheet.create({
   parentContainer: {
     width: screenWidth,
-    height: screenHeight,
+    height: screenHeight-60,
   },
   childContainer: {
     paddingHorizontal: constants.innerGap,

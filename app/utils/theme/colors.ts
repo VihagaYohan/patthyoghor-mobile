@@ -7,7 +7,7 @@ export default {
 
   // purple
   primaryPurple: '#3226B8',
-  lightPurple: '#DFDFFB',
+  lightPurple: 'rgba(50, 38, 184,0.67)',
 
   // gray
   primaryGray: 'F9F9F9',

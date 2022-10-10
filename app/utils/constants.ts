@@ -4,7 +4,7 @@ import {
   responsiveScreenWidth,
 } from 'react-native-responsive-dimensions';
 
-const {width, height} = Dimensions.get('screen');
+const {width, height} = Dimensions.get('window');
 
 const http = {
   POST: 'POST',

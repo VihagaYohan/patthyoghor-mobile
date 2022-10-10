@@ -8,7 +8,7 @@
  * @format
  */
 import 'react-native-gesture-handler';
-import React, {type PropsWithChildren} from 'react';
+import React, {type PropsWithChildren,useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,6 +17,7 @@ import {
   Text,
   useColorScheme,
   View,
+  LogBox
 } from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
@@ -26,6 +27,11 @@ import HomeScreen from './app/screens/HomeScreen';
 import {BottomNavigator} from './app/navigators';
 
 const App = () => {
+
+  useEffect(()=>{
+    LogBox.ignoreLogs(['VirtualizedLists should never be nested'])
+  },[])
+  
   return (
     <NavigationContainer>
       <BottomNavigator />

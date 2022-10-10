@@ -28,12 +28,12 @@ const Carousel = ({data}: Carousel) => {
 
   const RenderItem = ({item, index}) => {
     return (
-      <TouchableOpacity style={styles.container}>
+      <View style={styles.container}>
         <Image
           source={require('../assets/images/image_1.png')}
           style={styles.image}
         />
-      </TouchableOpacity>
+      </View>
     );
   };
 
