@@ -1,6 +1,7 @@
 export interface List {
     data:[{}];
-    otherProps?:{}
+    otherProps?:{},
+    ListItem?:any
 }
 
 export default List;

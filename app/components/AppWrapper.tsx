@@ -63,7 +63,7 @@ const AppWrapper = ({
 const styles = StyleSheet.create({
   parentContainer: {
     width: screenWidth,
-    height: screenHeight-60,
+    height: screenHeight-100,
   },
   childContainer: {
     paddingHorizontal: constants.innerGap,

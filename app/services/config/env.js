@@ -1,11 +1,11 @@
-import {BASE_URL} from '@env'
 
-const devEnvirontment = {
-    BASE_URL
+
+export const devEnvirontment = {
+    BASE_URL:'http://192.168.1.6:5000/api'
 }
 
-const prodEnvironment = {
-    BASE_URL
+export const prodEnvironment = {
+    BASE_URL:'http://192.168.1.6:5000/api'
 }
 
 export default {

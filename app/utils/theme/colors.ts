@@ -1,6 +1,7 @@
 export default {
   // black
   primaryBlack: '#020202',
+  transparentBlack:"rgba(0,0,0,0.8)",
 
   // white
   primaryWhite: '#FFFFFF',
