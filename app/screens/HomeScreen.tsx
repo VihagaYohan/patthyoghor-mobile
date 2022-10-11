@@ -159,27 +159,29 @@ const Screen = () => {
   console.log(bookList);
   return (
     <AppWrapper isScroll={true} showWelcome={true}>
-      <MediumText style={styles.title}>Find your favorite books</MediumText>
-
-      <Carousel data={DATA} />
-
-      <SectionTitle title="Trending Books" />
-      <List
-        data={trendingList}
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        ListItem={BookItem}
-      />
-
       {isLoading == true ? (
         <Loading />
       ) : (
-        <CategoryList
-          data={bookList}
-          horizontal={false}
-          nestedscrollEnabled={true}
-          ListItem={BookItem}
-        />
+        <React.Fragment>
+          <MediumText style={styles.title}>Find your favorite books</MediumText>
+
+          <Carousel data={DATA} />
+
+          <SectionTitle title="Trending Books" />
+          <List
+            data={trendingList}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            ListItem={BookItem}
+          />
+
+          <CategoryList
+            data={bookList}
+            horizontal={false}
+            nestedscrollEnabled={true}
+            ListItem={BookItem}
+          />
+        </React.Fragment>
       )}
     </AppWrapper>
   );
